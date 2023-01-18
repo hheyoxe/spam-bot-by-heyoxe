@@ -33,7 +33,7 @@ namespace ExeExeExe
                 if (!isRunning) { break; }
                 SendKeys.SendWait("{A}");
                 SendKeys.SendWait("~");
-                SendKeys.SendWait("`7SELLSPAM = `2YOURWORLD`7");
+                SendKeys.SendWait("YourtextHere or message here");
                 SendKeys.SendWait("~");
                 textSwitch = false;
                 while (!textSwitch)
@@ -43,7 +43,7 @@ namespace ExeExeExe
                     if (!isRunning) { break; }
                     SendKeys.SendWait("{D}");
                     SendKeys.SendWait("~");
-                    SendKeys.SendWait("`2SELLSPAM = `5YOURWORLD`2");
+                    SendKeys.SendWait("YourTextHere or message2 here");
                     SendKeys.SendWait("~");
                     textSwitch2 = true;
                     while (textSwitch2)
@@ -52,7 +52,7 @@ namespace ExeExeExe
                         Thread.Sleep(Timer);
                         if (!isRunning) { break; }
                         SendKeys.SendWait("~");
-                        SendKeys.SendWait("`4SELLSPAM = `0YOURWORLD`4");
+                        SendKeys.SendWait("YourTextHere or message3 here");
                         SendKeys.SendWait("~");
                         textSwitch2 = false;
                     }
