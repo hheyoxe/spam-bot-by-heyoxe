@@ -31,29 +31,29 @@ namespace ExeExeExe
                 if (!isRunning) { break; }
                 Thread.Sleep(Timer);
                 if (!isRunning) { break; }
-                SendKeys.SendWait("{A}");
-                SendKeys.SendWait("~");
+                SendKeys.SendWait("{A}"); //presses A
+                SendKeys.SendWait("~"); //presses enter
                 SendKeys.SendWait("YourtextHere or message here");
-                SendKeys.SendWait("~");
+                SendKeys.SendWait("~"); //presses enter
                 textSwitch = false;
                 while (!textSwitch)
                 {
                     if (!isRunning) { break; }
                     Thread.Sleep(Timer);
                     if (!isRunning) { break; }
-                    SendKeys.SendWait("{D}");
-                    SendKeys.SendWait("~");
+                    SendKeys.SendWait("{D}"); //presses D
+                    SendKeys.SendWait("~"); //presses enter
                     SendKeys.SendWait("YourTextHere or message2 here");
-                    SendKeys.SendWait("~");
+                    SendKeys.SendWait("~"); //presses enter
                     textSwitch2 = true;
                     while (textSwitch2)
                     {
                         if (!isRunning) { break; }
                         Thread.Sleep(Timer);
                         if (!isRunning) { break; }
-                        SendKeys.SendWait("~");
+                        SendKeys.SendWait("~"); //presses enter
                         SendKeys.SendWait("YourTextHere or message3 here");
-                        SendKeys.SendWait("~");
+                        SendKeys.SendWait("~"); //presses enter
                         textSwitch2 = false;
                     }
                     Thread.Sleep(0);
